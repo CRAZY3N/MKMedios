@@ -1,0 +1,145 @@
+@import url('css/normalize.css');
+
+/*General*/
+*{
+    margin: 0;
+    padding: 0 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/*Por Etiqueta */
+html{
+    box-sizing: border-box; /* Parte 1 para que solo se tome el tamaño final dado por el usuario, evitando margin y padding */
+    font-size: 62.5%; /* Reset para los REMs -62.5% = 10px de 16px */
+}
+*,*::before, *::after{
+    box-sizing: inherit; /* Parte 2 para que solo se tome el tamaño final dado por el usuario, evitando margin y padding*/
+}
+
+body{
+    background: url(../images/back.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+/* Por Clase */
+
+.login-box{
+    width: 85rem;
+    height: 57rem;
+    background: rgba(0,0,0,0.7);
+    position: absolute; /* Para poder mover los siguientes campos, es requerido este position */
+    color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 7rem 3rem;
+}
+
+.login-box .logo{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -8%;
+    left: calc(50% - 60px);    
+}
+
+.login-box h1{
+    margin: 0;
+    padding: -2rem 0 1rem 0;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.login-box h2{
+    padding: -1rem 0;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.login-box label{
+    width: 90%;
+    margin: 0;
+    padding: 1rem 0;
+    font-weight: bold;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.login-box input{
+    width: 90%;
+    height: 3vh;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box input[type="date"] {
+    border: none;
+    border-bottom: 0.3rem solid #FFFFFF;
+    background: transparent;
+    outline: none;
+    width: 90%;
+}
+
+.login-box input[type="submit"]{
+    height: 4rem;
+    border: none;
+    background: #11B4C8;
+    outline: none;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+.login-box select{
+    height: 2rem;
+    outline: none;
+    width: 90%;
+    outline: none;
+}
+
+.login-box a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5vh;
+}
+
+.fila{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.grupo{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.agrupar{
+    margin: 1.5rem 0.5rem;
+    width: 100%;
+    height: 5rem;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.enlace{
+    font-size: 2rem;
+    font-weight: bold;
+}
