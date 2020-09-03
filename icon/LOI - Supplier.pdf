@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>LOI - Supplier</title>
+    <meta name="keywords" content="MK MEDIOS, Logistica, aereo, maritimo, terrestre, importación, exportación,CIF, FOB">
+    <meta name="description" content="MK MEDIOS DE COMUNICACIÓN, nos dedicamos al comercio exterior, ayudandote a importar tus productos desde cualquier país, e igual exportando tus productos a cualquier país, te acesoramos desde la planeación de tus operaciones hasta la llegada del producto a puerta.">
+    <meta name="author" content="MK MEDIOS DE COMUNICACIÓN, EmmKall">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="../mk.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../images/work_1.png">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- <link rel="stylesheet" href="../css/supplierproduc.css"> -->
+    <link rel="stylesheet" href="../css/docs.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+
+    </header>
+
+    <!-- Contenido -->
+    <main class="contenedor">
+        <div class="encabezado"></div>
+
+        <div class="cuerpo">
+            <h1 class="text-cen ff-t">LOI - Letter of intent</h1>
+        </div>
+
+        <div class="pie-pagina"></div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>

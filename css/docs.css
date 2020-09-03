@@ -1,0 +1,200 @@
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700;900&display=swap');
+
+/* Generales */
+
+
+/* Etiquetas */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Utilidades */
+
+.hoja {
+    width: 2480px;
+}
+
+.contenedor {
+    max-width: 2398px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Alinear textp */
+
+.text-cen {
+    text-align: center;
+}
+
+.text-izq {
+    text-align: left;
+}
+
+.text-der {
+    text-align: right;
+}
+
+.text-jus {
+    text-align: justify;
+}
+
+
+/* Tipos de textos */
+
+.ff-t {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.ff-c {
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+.ff-c span {
+    font-weight: 600;
+}
+
+
+/* Espacio */
+
+.espacio-1 {
+    line-height: 1;
+}
+
+.espacio-12 {
+    line-height: 1.2;
+}
+
+.espacio-14 {
+    line-height: 1.4;
+}
+
+.espacio-16 {
+    line-height: 1.6;
+}
+
+.espacio-18 {
+    line-height: 1.8;
+}
+
+.espacio-2 {
+    line-height: 2;
+}
+
+.espacio-22 {
+    line-height: 2.2;
+}
+
+.espacio-24 {
+    line-height: 2.4;
+}
+
+.espacio-26 {
+    line-height: 2.6;
+}
+
+
+/* Margen */
+
+.no-margen {
+    margin: 0 0;
+}
+
+.margin-ne {
+    margin: -3rem 0;
+}
+
+.margen-par {
+    margin: 7rem 0;
+}
+
+
+/* Clases */
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagenes img {
+    flex: 0 0 calc(80% - 20rem);
+    margin: 5rem 0;
+}
+
+
+/* Documentos LOI */
+
+
+/* Encabezado */
+
+.encabezado {
+    background: url(../docs/Encabezado.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 2480px;
+    height: 295px;
+    border-top: 1rem solid #504e4e;
+}
+
+
+/* Cuerpo */
+
+.cuerpo {
+    background: url(../docs/cuerpo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 2480px;
+    height: 2398px;
+}
+
+.cuerpo-texto {
+    width: 1984px;
+    margin: 0 auto;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Pie de Pagina */
+
+.pie-pagina {
+    background: url(../docs/pie-pag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 2480px;
+    height: 295px;
+    border-bottom: 1rem solid #504e4e;
+    margin-bottom: 1rem;
+}

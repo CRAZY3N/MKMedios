@@ -1,38 +1,122 @@
 @import url('css/normalize.css');
 
 /*General*/
-*{
+
+* {
     margin: 0;
     padding: 0 0;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-/*Por Etiqueta */
-html{
-    box-sizing: border-box; /* Parte 1 para que solo se tome el tamaño final dado por el usuario, evitando margin y padding */
-    font-size: 62.5%; /* Reset para los REMs -62.5% = 10px de 16px */
-}
-*,*::before, *::after{
-    box-sizing: inherit; /* Parte 2 para que solo se tome el tamaño final dado por el usuario, evitando margin y padding*/
 }
 
-body{
+
+/*Por Etiqueta */
+
+html {
+    box-sizing: border-box;
+    /* Parte 1 para que solo se tome el tamaño final dado por el usuario, evitando margin y padding */
+    font-size: 62.5%;
+    /* Reset para los REMs -62.5% = 10px de 16px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    /* Parte 2 para que solo se tome el tamaño final dado por el usuario, evitando margin y padding*/
+}
+
+body {
     background: url(../images/back.jpg) no-repeat center top;
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
+    font-size: 1.6rem;
 }
+
+
+/* Utilidades */
+
+.contenedor {
+    margin: 2.5rem 0;
+}
+
+.margin-10 {
+    margin: 1rem 0;
+}
+
+.text-cen {
+    text-align: center;
+}
+
+.text-izq {
+    text-align: left;
+}
+
+.text-der {
+    text-align: right;
+}
+
+.text-just {
+    text-align: justify;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columna-10 {
+    flex: 0 0 calc(10% - 1rem);
+}
+
+.columna-20 {
+    flex: 0 0 calc(20% - 1rem);
+}
+
+.columna-30 {
+    flex: 0 0 calc(30% - 1rem);
+}
+
+.columna-40 {
+    flex: 0 0 calc(40% - 1rem);
+}
+
+.columna-50 {
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.btn {
+    margin: 4rem 0;
+    background: #504e4e;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.icono {
+    width: 35%;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
 /* Por Clase */
 
-.login-box{
+.login-box {
     width: 85rem;
     height: 57rem;
-    background: rgba(0,0,0,0.7);
-    position: absolute; /* Para poder mover los siguientes campos, es requerido este position */
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    /* Para poder mover los siguientes campos, es requerido este position */
     color: #FFFFFF;
     top: 50%;
     left: 50%;
@@ -41,16 +125,16 @@ body{
     padding: 7rem 3rem;
 }
 
-.login-box .logo{
+.login-box .logo {
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
     position: absolute;
     top: -8%;
-    left: calc(50% - 60px);    
+    left: calc(50% - 60px);
 }
 
-.login-box h1{
+.login-box h1 {
     margin: 0;
     padding: -2rem 0 1rem 0;
     font-weight: bold;
@@ -59,7 +143,7 @@ body{
     font-size: 3.5rem;
 }
 
-.login-box h2{
+.login-box h2 {
     padding: -1rem 0;
     font-weight: bold;
     display: block;
@@ -67,7 +151,7 @@ body{
     font-size: 2.5rem;
 }
 
-.login-box label{
+.login-box label {
     width: 90%;
     margin: 0;
     padding: 1rem 0;
@@ -76,7 +160,7 @@ body{
     font-size: 1.2rem;
 }
 
-.login-box input{
+.login-box input {
     width: 90%;
     height: 3vh;
     margin-bottom: 2rem;
@@ -94,7 +178,7 @@ body{
     width: 90%;
 }
 
-.login-box input[type="submit"]{
+.login-box input[type="submit"] {
     height: 4rem;
     border: none;
     background: #11B4C8;
@@ -104,42 +188,59 @@ body{
     width: 10rem;
 }
 
-.login-box select{
+.login-box select {
     height: 2rem;
     outline: none;
     width: 90%;
     outline: none;
 }
 
-.login-box a{
+.login-box a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 1.5vh;
 }
 
-.fila{
+.fila {
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
 }
 
-.grupo{
+.grupo {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }
 
-.agrupar{
+.agrupar {
     margin: 1.5rem 0.5rem;
     width: 100%;
     height: 5rem;
+    align-items: center;
+    text-align: center;
 }
 
-.boton{
+.boton {
     display: flex;
     justify-content: center;
 }
-.enlace{
+
+.enlace {
     font-size: 2rem;
     font-weight: bold;
+}
+
+
+/* Ventana para proveedores, ver sus productos y nuevos productos */
+
+.mostar-datos {
+    justify-content: space-evenly;
+    margin: 3rem 0;
+    margin-bottom: 7rem;
+}
+
+.mostrar-prod {
+    margin: 2rem 0;
+    margin-bottom: 7rem;
 }
