@@ -75,12 +75,24 @@ body {
     flex: 0 0 calc(10% - 1rem);
 }
 
+.columna-15 {
+    flex: 0 0 calc(15% - 1rem);
+}
+
 .columna-20 {
     flex: 0 0 calc(20% - 1rem);
 }
 
+.columna-25 {
+    flex: 0 0 calc(25% - 1rem);
+}
+
 .columna-30 {
     flex: 0 0 calc(30% - 1rem);
+}
+
+.columna-35 {
+    flex: 0 0 calc(35% - 1rem);
 }
 
 .columna-40 {
@@ -101,11 +113,15 @@ body {
 }
 
 .icono {
-    width: 35%;
+    width: 50%;
     cursor: pointer;
     display: flex;
     text-align: center;
     align-items: center;
+}
+
+.linear {
+    display: inline-flex;
 }
 
 
