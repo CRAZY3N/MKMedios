@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Supplier New Product</title>
+    <title>Update Supplier</title>
     <meta name="keywords" content="MK MEDIOS, Logistica, aereo, maritimo, terrestre, importación, exportación,CIF, FOB">
     <meta name="description" content="MK MEDIOS DE COMUNICACIÓN, nos dedicamos al comercio exterior, ayudandote a importar tus productos desde cualquier país, e igual exportando tus productos a cualquier país, te acesoramos desde la planeación de tus operaciones hasta la llegada del producto a puerta.">
     <meta name="author" content="MK MEDIOS DE COMUNICACIÓN, EmmKall">
@@ -33,114 +33,66 @@
         <img class="logo" src="images/mk-logowhite.jpg" alt="Logo MKMedios">
         <h1>Update</h1>
         <form action="" action="" method="POST">
-            <!-- ROW Supplier Name, Registered ID, Origin & Type of Supplier -->
+
+            <!-- ROW Supplier Name, Registered ID & Origin-->
             <div class="fila">
                 <div class="agrupar">
                     <!-- Supplier Name -->
                     <label for="sn">Supplier Name</label>
-                    <input type="text" name="" id="" placeholder="Supplier Name">
+                    <input type="text" name="" id="" placeholder="Supplier Name" disabled>
                 </div>
 
                 <div class="agrupar">
                     <!-- Registered ID -->
                     <label for="id-s">Registered ID</label>
-                    <input type="text" name="" id="" placeholder="Registered ID">
+                    <input type="text" name="" id="" placeholder="Registered ID" disabled>
                 </div>
 
                 <div class="agrupar">
                     <!-- ORIGIN -->
                     <label for="origin">Origin:</label>
-                    <select name="origin" id="">
+                    <select name="origin" id="" disabled>
 							<option value="1">Mexico</option>
-							<option value="2">Ecuador</option>
-							<option value="3">Costa Rica</option>
-							<option value="4">Chile</option>
-							<option value="5">Argentina</option>
-							<option value="6">Brazil</option>
-						</select>
-                </div>
-
-                <div class="agrupar">
-                    <!-- Type of Supplier -->
-                    <label for="tos">Type Of Supplier</label>
-                    <select name="tos" id="">
-							<option value="1">Distributor</option>
-							<option value="2">Plant</option>
 						</select>
                 </div>
             </div>
+
             <!-- ROW of Kind Of Product, Item, Standar & Packing Standar -->
             <div class="fila">
                 <div class="agrupar">
                     <!-- KIND OF PRODUCT -->
                     <Label for="kop">Kind Of Product</Label>
-                    <select name="kop" id="">
+                    <select name="kop" id="" disabled>
 						<option value="1">Pork</option>
-						<option value="2">Beef</option>
-						<option value="3">SeaFood</option>
-						<option value="4">Poultry</option>
 					</select>
                 </div>
 
                 <div class="agrupar">
                     <!-- Item -->
                     <label for="item">Item</label>
-                    <select name="item" id="">
+                    <select name="item" id="" disabled>
 						<option value="1">Six ways</option>
-						<option value="2">Bone in ham</option>
-						<option value="3">Bone in Center Cut</option>
-						<option value="4">Bone in Shoulder</option>
-
-						<option value="5">Beef</option>
-						<option value="6">Beef Tripe Unbleached</option>
-						<option value="7">Beef Honeycomb Unbleached</option>
-						<option value="8">Beef Omasum</option>
-						<option value="9">Beef Aorta</option>
-						<option value="10">Beef Tendons</option>
-						<option value="11">Beef Paddywack</option>
-						<option value="12">Beef Diaphragm Membrane</option>
-						<option value="13">Beef Tongues</option>
-
-						<option value="14">Shrimp</option>
-						<option value="15">RibbonFish</option>
-						<option value="16">Whole Chicken</option>
-						<option value="17">Squil</option>
-
-						<option value="18">Whole Chicken</option>
-						<option value="7">Chicken Paw</option>
-						<option value="8">Chicken MJW</option>
-						<option value="9">Chicken Feet</option>
 					</select>
                 </div>
 
                 <div class="agrupar">
                     <!-- Standar -->
                     <label for="standar">Standar</label>
-                    <select name="standar" id="">
+                    <select name="standar" id="" disabled>
 						<option value="1">6-Cutting</option>
-						<option value="2">Whole Part</option>
-
-						<option value="3">Detail Cut</option>
-
-						<option value="4">HOSO</option>
-						<option value="5">Whole Fish</option>
-						<option value="6">Whole</option>
-
-						<option value="7">Whole Chicken</option>
-						<option value="8">Grade A</option>
 					</select>
                 </div>
 
                 <div class="agrupar">
                     <!-- Package Standar -->
                     <label for="packs">Packing Standar</label>
-                    <input type="text" name="" id="" placeholder="Packing Standar">
+                    <input type="text" name="" id="" placeholder="Packing Standar" disabled>
                 </div>
 
                 <!-- Name of the plant -->
                 <div class="agrupar">
                     <label for="namep">Name of the plant</label>
-                    <input type="text" name="namep" id="" placeholder="Name of the plant">
+                    <input type="text" name="namep" id="" placeholder="Name of the plant" disabled>
                 </div>
             </div>
 
@@ -149,48 +101,39 @@
                 <div class="agrupar">
                     <!-- Destination -->
                     <label for="destination">Destination</label>
-                    <select name="destination" id="">
+                    <select name="destination" id="" disabled>
 						<option value="1">Guangzhou</option>
-					<option value="2">Shanghai</option>
-					<option value="3">Nansha</option>
-					<option value="4">HongKong</option>
 					</select>
                 </div>
 
                 <div class="agrupar">
                     <!-- Incoterm -->
                     <label for="incoterm">Incoterm</label>
-                    <select name="incoterm" id="">
+                    <select name="incoterm" id="" disabled>
 						<option value="1">CIF</option>
-						<option value="2">EXW</option>
-						<option value="3">CIP</option>
-						<option value="4">DAP</option>
-						<option value="5">DDP</option>
-						<option value="6">FOB</option>
 					</select>
                 </div>
 
                 <div class="agrupar">
                     <!-- HS Code -->
                     <label for="hsc">HS Code</label>
-                    <input type="text" name="" id="" placeholder="HS Code">
+                    <input type="text" name="" id="" placeholder="HS Code" disabled>
                 </div>
 
                 <div class="agrupar">
                     <!-- Import Tax -->
                     <label for="importtx">Import TAX</label>
-                    <input type="text" name="" id="" placeholder="Import TAX">
+                    <input type="text" name="" id="" placeholder="Import TAX" disabled>
                 </div>
             </div>
 
-            <!-- ROW Payment Term, Unit Price/MT, MT/Container, Valid From & Vaid DeaLine -->
+            <!-- ROW Payment Term, Unit Price/MT, MT/Container, Valid From & Valid DeaLine -->
             <div class="fila">
                 <div class="agrupar">
                     <!-- Payment Term -->
                     <label for="payt">Payment Term</label>
-                    <select name="payt" id="">
+                    <select name="payt" id="" disabled>
 						<option value="1">DLC</option>
-						<option value="2">TT</option>
 					</select>
                 </div>
 
@@ -203,7 +146,7 @@
                 <div class="agrupar">
                     <!-- MT/Contanier -->
                     <label for="mtcontanier">MT/Contanier</label>
-                    <input type="text" name="" id="" placeholder="MT/Contanier">
+                    <input type="text" name="" id="" placeholder="MT/Contanier" disabled>
                 </div>
 
                 <div class="agrupar">
@@ -221,7 +164,7 @@
             </div>
             <!-- SEND -->
             <div class="boton">
-                <input type="submit" value="SAVE">
+                <input type="submit" value="UPDATED">
             </div>
             <div class="enlace">
                 <a href="#">Logout</a>
