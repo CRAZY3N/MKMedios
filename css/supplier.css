@@ -214,21 +214,12 @@ a {
     padding-top: 8rem;
 }
 
-.contenedor.main {
-    height: 92rem;
-}
 
-.contenedor.new {
-    height: 220vh;
-}
-
-new h1 {
-    margin: 0;
-}
+/* Contenedor New Product */
 
 @media (min-width: 768px) {
     .contenedor.new {
-        height: 220rem;
+        height: 70rem;
     }
 }
 
@@ -246,8 +237,14 @@ new h1 {
 }
 
 .campo {
+    display: grid;
     max-width: 80rem;
     margin: 0 auto;
+}
+
+.campo.subcampo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .campo .esp-boton {
@@ -311,22 +308,22 @@ new h1 {
     width: 90%;
     max-height: 40rem;
     min-height: 9rem;
-    height: 65%;
-    background: rgba(255, 255, 255, 0.1);
+    height: 35rem;
+    background: rgba(255, 255, 255, 0.02);
     margin: auto;
 }
 
 @media (min-width: 300px) {
     .contenedor.con-lo {
         width: 80%;
-        height: 60%;
+        height: 50rem;
     }
 }
 
 @media (min-width: 768px) {
     .contenedor.con-lo {
         width: 25%;
-        height: 50%;
+        height: 50rem;
     }
     .login {
         width: 95%;
@@ -355,7 +352,7 @@ new h1 {
 @media (min-width: 768px) {
     .contenedor.main {
         width: 50%;
-        height: 65rem;
+        height: 55rem;
     }
 }
 
@@ -366,7 +363,7 @@ new h1 {
     background: rgba(255, 255, 255, 0.03);
     max-height: 80rem;
     min-height: 10rem;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .main .principal {
@@ -388,14 +385,14 @@ new h1 {
         height: 40rem;
     }
     .main .principal .fila-sup {
-        margin: 3rem 0;
+        margin: 1rem 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
         align-items: center;
     }
     .main .principal .fila-pro {
-        margin: 3rem 0;
+        margin: 1rem 0;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         column-gap: 2rem;
@@ -411,14 +408,14 @@ new h1 {
         height: 55rem;
     }
     .new .principal .fila-sup {
-        margin: 3rem 0;
+        margin: 1rem 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 3rem;
         align-items: center;
     }
     .new .principal .fila-pro {
-        margin: 3rem 0;
+        margin: 1rem 0;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         column-gap: 3rem;
