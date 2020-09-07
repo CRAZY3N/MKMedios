@@ -31,54 +31,55 @@ html {
 }
 
 body {
-    background: url(../images/back.jpg) no-repeat center top;
+    background: url(../img/back.jpg) no-repeat center top;
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
 }
 
-
-/* Por Clase */
-
-.login-box {
-    width: 35rem;
-    height: 45rem;
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    /* Para poder mover los siguientes campos, es requerido este position */
-    color: #FFFFFF;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 7rem 3rem;
+@media(max-width: 479px) {
+    body.repetir {
+        background: url(../img/back.jpg);
+        background-repeat: repeat;
+        font-family: sans-serif;
+        height: 300vh;
+    }
+    body.repetir-a {
+        background: url(../img/back.jpg) no-repeat;
+        background-repeat: no-repeat;
+        font-family: sans-serif;
+    }
 }
 
-.login-box .logo {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    position: absolute;
-    top: -15%;
-    left: calc(50% - 60px);
+@media (min-width: 700px) {
+    body,
+    body-repetir,
+    body-repetir-a {
+        background: url(../img/back.jpg) no-repeat center top;
+        background-size: cover;
+        font-family: sans-serif;
+        height: 100vh;
+    }
 }
 
-.login-box h1 {
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    font-size: 3.5rem;
+h1 {
+    font-size: 3rem;
 }
 
-.login-box h2 {
-    margin-top: -2rem;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    font-size: 2.5rem;
+h2 {
+    font-size: 2rem;
 }
 
-.login-box label {
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+label,
+legend {
     margin: 0;
     padding: 1rem 0;
     font-weight: bold;
@@ -86,7 +87,11 @@ body {
     font-size: 1.5rem;
 }
 
-.login-box input {
+legend {
+    font-size: 1.2rem;
+}
+
+input {
     width: 100%;
     height: 3vh;
     margin-bottom: 2rem;
@@ -94,35 +99,331 @@ body {
     font-size: 1.6rem;
 }
 
-.login-box input[type="text"],
-.login-box input[type="password"] {
+input[type="text"],
+input[type="password"],
+input[type="date"] {
     border: none;
     border-bottom: 0.3rem solid #FFFFFF;
     background: transparent;
     outline: none;
 }
 
-.login-box select {
+select {
     width: 100%;
     border: none;
     border-bottom: 0.3rem solid #FFFFFF;
     background: transparent;
     outline: none;
-    color: #13C0D8;
+    color: #FFFFFF;
     margin: 2rem 0;
     font-size: 1.5rem;
 }
 
-.login-box input[type="submit"] {
+input[type="submit"] {
     height: 4rem;
     border: none;
     background: #11B4C8;
     outline: none;
     border-radius: 3rem;
+    font-weight: 700;
 }
 
-.login-box a {
+a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 1.5vh;
+    font-size: 1.6rem;
+    margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+    label {
+        font-weight: bold;
+    }
+}
+
+
+/* Por Clase */
+
+
+/* Utilidades */
+
+
+/* Margen */
+
+.margen {
+    margin-top: 4.8rem;
+}
+
+@media (min-width: 768px) {
+    .margen {
+        margin-top: 1.2rem;
+    }
+}
+
+
+/* Font-size */
+
+.fs-1 {
+    font-size: 1rem;
+}
+
+.fs-15 {
+    font-size: 1.5rem;
+}
+
+.fs-2 {
+    font-size: 2rem;
+}
+
+.fs-25 {
+    font-size: 2.5rem;
+}
+
+.fs-3 {
+    font-size: 3rem;
+}
+
+.fs-35 {
+    font-size: 3.5rem;
+}
+
+.fs-4 {
+    font-size: 4rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    min-height: 10rem;
+    max-height: 185rem;
+    width: 90%;
+    height: 95%;
+    margin: auto;
+    margin-top: 10rem;
+    background: rgba(34, 34, 34, 0.7);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        max-height: 80rem;
+    }
+}
+
+.contenedor h1 {
+    padding-top: 8rem;
+}
+
+.contenedor.main {
+    height: 92rem;
+}
+
+.contenedor.new {
+    height: 220vh;
+}
+
+new h1 {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .contenedor.new {
+        height: 220rem;
+    }
+}
+
+.contenedor h2 {
+    padding: 1rem 0;
+    padding-bottom: 3rem;
+}
+
+.logo {
+    width: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 4rem;
+    left: calc(50% - 7rem);
+}
+
+.campo {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.campo .esp-boton {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.campo a p {
+    display: grid;
+    background: #000000;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .campo {
+        display: grid;
+    }
+    .campo .esp-boton {
+        width: 25rem;
+    }
+}
+
+.boton {
+    max-width: 15rem;
+    margin: 1rem auto;
+}
+
+.fila {
+    margin: 2rem 0;
+}
+
+.linear {
+    display: flex;
+}
+
+.icono {
+    width: 20%;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .icono {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .icono {
+        width: 30%;
+    }
+}
+
+
+/* Login */
+
+.login {
+    display: grid;
+    width: 90%;
+    max-height: 40rem;
+    min-height: 9rem;
+    height: 65%;
+    background: rgba(255, 255, 255, 0.1);
+    margin: auto;
+}
+
+@media (min-width: 300px) {
+    .contenedor.con-lo {
+        width: 80%;
+        height: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor.con-lo {
+        width: 25%;
+        height: 50%;
+    }
+    .login {
+        width: 95%;
+        display: grid;
+        height: 70%;
+        place-items: center;
+    }
+    .login form {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        column-gap: 1rem;
+    }
+    .campo {
+        width: 100%;
+    }
+}
+
+
+/* Principal */
+
+.contenedor.main {
+    height: 100rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor.main {
+        width: 50%;
+        height: 65rem;
+    }
+}
+
+.principal {
+    display: grid;
+    width: 90%;
+    height: 70%;
+    background: rgba(255, 255, 255, 0.03);
+    max-height: 80rem;
+    min-height: 10rem;
+    margin: auto;
+}
+
+.main .principal {
+    height: 90%;
+}
+
+@media (min-width: 768px) {
+    .main .principal {
+        height: 90rem;
+    }
+}
+
+.new .principal {
+    height: 500rem;
+}
+
+@media (min-width: 768px) {
+    .main .principal {
+        height: 40rem;
+    }
+    .main .principal .fila-sup {
+        margin: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+    .main .principal .fila-pro {
+        margin: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+}
+
+
+/* New Product */
+
+@media (min-width: 768px) {
+    .new .principal {
+        height: 55rem;
+    }
+    .new .principal .fila-sup {
+        margin: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+    .new .principal .fila-pro {
+        margin: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+
+/* ID */
